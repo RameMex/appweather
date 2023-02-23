@@ -1,0 +1,85 @@
+.outline {
+  color: white;
+  border: none;
+  height: 60px;
+  width: 200px;
+}
+.simple {
+  color: rgb(255, 0, 234);
+}
+.small {
+  color: rgb(255, 0, 0);
+}
+::placeholder {
+  color: #8c8c8c;
+}
+input:focus {
+  outline: none;
+  background-color: white;
+  color: #161616;
+}
+
+input {
+  background-color: #161616;
+}
+.input_container {
+  display: grid;
+  grid-template-columns: 60px 200px 60px;
+  background-color: #161616;
+  border-radius: 32px;
+  position: relative;
+  width: 350px;
+}
+.icon {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+}
+.input_container:focus-within {
+  background-color: white;
+}
+.input_loading {
+  position: absolute;
+  max-height: 200px;
+  height: 200px;
+  width: 350px;
+  background-color: white;
+  margin-top: 40px;
+  z-index: 1;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+.input_list {
+  position: absolute;
+  max-height: 200px;
+  height: 200px;
+  width: 350px;
+  background-color: white;
+  margin-top: 40px;
+  z-index: 1;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+
+.input_list_container {
+  overflow: auto;
+  width: 330px;
+  height: 100%;
+}
+.li_list {
+  height: 60px;
+  display: grid;
+  grid-template-rows: 30px 30px;
+  justify-content: start;
+  align-items: end;
+  margin-left: 16px;
+}
+
+.city_name {
+  font-weight: 700;
+  text-align: initial;
+}
+.city_info {
+  font-size: 14px;
+  text-align: initial;
+}

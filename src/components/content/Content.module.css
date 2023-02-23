@@ -1,0 +1,25 @@
+.container_no_information {
+  width: 380px;
+  height: 100%;
+  border: 1px solid white;
+  border-radius: 40px;
+}
+.text_no_information {
+  margin-top: 150px;
+  margin-bottom: 24px;
+  font-size: 16px;
+  color: white;
+}
+
+.container {
+  width: 380px;
+  height: 100%;
+  border: 1px solid white;
+  border-radius: 40px;
+}
+.footer {
+  margin-top: 16px;
+  margin-left: 8px;
+  display: grid;
+  grid-template-columns: 160px 100px 100px;
+}

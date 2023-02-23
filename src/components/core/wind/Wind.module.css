@@ -1,0 +1,12 @@
+.container {
+  color: #161616;
+  width: 90px;
+  height: 120px;
+  display: grid;
+  grid-template-rows: 40px 40px 40px;
+  border-radius: 16px;
+  margin-left: 8px;
+  background-color: #f8d244;
+  justify-items: center;
+  align-items: center;
+}

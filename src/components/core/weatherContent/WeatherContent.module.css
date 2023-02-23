@@ -1,0 +1,14 @@
+.container {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  position: relative;
+  margin-top: 24px;
+}
+.temperature_text {
+  font-size: 96px;
+  position: absolute;
+  color: white;
+  margin-left: 80px;
+  margin-top: -30px;
+}

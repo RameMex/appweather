@@ -1,0 +1,10 @@
+.button_options_content {
+  background-color: white;
+  height: 50px;
+  width: 50px;
+  border-radius: 16px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  cursor: pointer;
+}

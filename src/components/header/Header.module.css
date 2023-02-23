@@ -1,0 +1,9 @@
+.header {
+  height: 100px;
+  width: 380px;
+  border: 1px solid white;
+  border-radius: 40px;
+  justify-content: center;
+  align-content: center;
+  display: grid;
+}

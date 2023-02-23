@@ -1,38 +1,24 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
 import "./App.css";
+import {
+  LanguageProvider,
+  useChangeLanguageContext,
+  useLanguageContext,
+} from "./utils/LanguageProvider";
+import { AppContainer } from "./AppContainer";
+import { WeatherProvider } from "./utils/WeatherProvider";
+import { PlaceProvider } from "./context/Place/PlaceProvider";
 
 function App() {
-  const [count, setCount] = useState(0);
-
+  const language = useLanguageContext();
+  const changeLanguage = useChangeLanguageContext();
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React </h1>
-      {import.meta.env.REACT_APP_NOT_SECRET_CODE}
-      <div className="card">
-        <button
-          onClick={() =>
-            setCount((count) => console.log(import.meta.env.VITE_SOME_KEY))
-          }
-        >
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
+    <LanguageProvider>
+      <PlaceProvider>
+        <WeatherProvider>
+          <AppContainer />
+        </WeatherProvider>
+      </PlaceProvider>
+    </LanguageProvider>
   );
 }
 

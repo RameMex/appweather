@@ -1,0 +1,17 @@
+.container {
+  margin-top: 16px;
+}
+.name_of_day {
+  font-size: 16px;
+  color: #8c8c8c;
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+.name_of_day_selected {
+  font-size: 16px;
+  color: white;
+  margin-left: 16px;
+  border: 1px solid white;
+  padding: 3px;
+}
