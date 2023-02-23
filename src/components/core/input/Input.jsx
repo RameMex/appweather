@@ -73,7 +73,7 @@ export const Input = ({ placeholder = "Search Places...", value, variant }) => {
         {listing && (
           <div className={s.input_list}>
             <div className={s.input_list_container}>
-              <ul>
+              <ul style={{ color: "#161616" }}>
                 {listing.map((place, index) => (
                   <li
                     className={s.li_list}
